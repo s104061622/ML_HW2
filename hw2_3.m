@@ -12,7 +12,7 @@ prior2 = betapdf(mu2,0.1,0.1);
 posterior1 = likelihood1 .* prior1;
 posterior2 = likelihood2 .* prior2;
 
-figure,
+subplot(3,1,1)
 plot(mu1,prior1);
-figure, plot(mu1,posterior1);
-figure, plot(mu2,posterior2);
+subplot(3,1,2), plot(mu1,posterior1);
+subplot(3,1,3), plot(mu2,posterior2);
